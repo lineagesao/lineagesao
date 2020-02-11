@@ -10,16 +10,31 @@
 </head>
 
 <body>
-    <section class="hero is-primary">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title">
+
+    <nav class="navbar is-primary">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/" style="font-weight:bold;">
                     SwordArtOnline Clan Points
-                </h1>
+                </a>
+                <span class="navbar-burger burger" data-target="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                </div>
+            <div id="navMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="/" class="navbar-item">Home</a>
+                    <a href="/pointsystem" class="navbar-item">Point System</a>
+                </div>
             </div>
         </div>
-    </section>
+    </nav>
 
+
+
+    
     <section class="section">
         <div class="container">
 
@@ -28,7 +43,36 @@
                     <div class="content">
                         
 
-                        player is Feast@
+                        <h1>Feast@</h1>
+
+                        <table class="table is-striped">
+                            <thead>
+                                <tr>
+                                    <th>Points</th>
+                                    <th>Main Class</th>
+                                    <th>Sub Class</th>
+                                    <th>Clan Role</th>
+                                    <th>Active</th>
+                                </tr>
+                            </thead>
+                            <tr>
+                                <td>
+                                    13990
+                                </td>
+                                <td>
+                                    char
+                                </td>
+                                <td>
+                                    subclass
+                                </td>
+                                <td>
+                                    squire
+                                </td>
+                                <td>
+                                    True
+                                </td>
+                            </tr>
+                        </table>
 
                         
                     </div>
@@ -38,8 +82,23 @@
         </div>
 
     </section>
+ 
     <footer class="footer">
+        <center>Designed by Wildhawkz using Python Django and hosted at Github Pages<br />Last updated: February 11th, 2020</center>
     </footer>
+
+    <script type="text/javascript">
+        (function() {
+          var burger = document.querySelector('.burger');
+          var nav = document.querySelector('#'+burger.dataset.target);
+  
+          burger.addEventListener('click', function(){
+            burger.classList.toggle('is-active');
+            nav.classList.toggle('is-active');
+          });
+        })();
+      </script>
+      
 </body>
 
 </html>

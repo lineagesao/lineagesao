@@ -57,7 +57,7 @@
                             </thead>
                             <tr>
                                 <td>
-                                    14750
+                                    20000
                                 </td>
                                 <td>
                                     char
@@ -84,8 +84,21 @@
     </section>
  
     <footer class="footer">
-        <center>Designed by Wildhawkz using Python Django and hosted at Github Pages<br />Last updated: February 10th, 2020</center>
+        <center>Designed by Wildhawkz using Python Django and hosted at Github Pages<br />Last updated: February 11th, 2020</center>
     </footer>
+
+    <script type="text/javascript">
+        (function() {
+          var burger = document.querySelector('.burger');
+          var nav = document.querySelector('#'+burger.dataset.target);
+  
+          burger.addEventListener('click', function(){
+            burger.classList.toggle('is-active');
+            nav.classList.toggle('is-active');
+          });
+        })();
+      </script>
+      
 </body>
 
 </html>

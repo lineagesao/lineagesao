@@ -10,33 +10,40 @@
 </head>
 
 <body>
-    <section class="hero is-primary">
-        <div class="hero-body">
-            <div class="container">
-                <h1 class="title">
+
+    <nav class="navbar is-primary">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="/" style="font-weight:bold;">
                     SwordArtOnline Clan Points
-                </h1>
+                </a>
+                <span class="navbar-burger burger" data-target="navMenu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
+                </div>
+            <div id="navMenu" class="navbar-menu">
+                <div class="navbar-end">
+                    <a href="/" class="navbar-item">Home</a>
+                    <a href="/pointsystem" class="navbar-item">Point System</a>
+                </div>
             </div>
         </div>
-    </section>
+    </nav>
+
+
+
+    
 
     <section class="section">
         <div class="container">
-
-            <article class="media">
-                <div class="media-content">
-                    <div class="content">
-                        <a href="#">Add new member</a>
-                        Update points
-                    </div>
-                </div>
-            </article>
 
             <table class="table is-striped">
                 <thead>
                     <tr>
                         <th>Member</th>
-                        <th>Points</th>
+                        <th>Total Points</th>
                         <th>Main Class</th>
                         <th>Sub Class</th>
                         <th>Clan Role</th>
@@ -859,7 +866,9 @@
         </div>
 
     </section>
+     
     <footer class="footer">
+        <center>Designed by Wildhawkz using Python Django and hosted at Github Pages<br />Last updated: February 10th, 2020</center>
     </footer>
 </body>
 
